@@ -1,0 +1,36 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    height: 50rem;
+    width: 35rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+#cardBody{
+    background-color: blanchedalmond;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+img{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+
+}
+/* Smaller screens */
+@media screen and (max-width: 660px) {
+    #container {
+        flex-direction: row;
+        height: 30rem;
+        width: 25rem;
+    }
+}
+
+/* For screens 3 (3333px) and above (with no horizontal scrolling), or for all sizes, if the horizontal scroll is enabled */
+@media screen and (min-width: 500px) {
+    #container {
+        flex-direction: row;
+    }
+}
